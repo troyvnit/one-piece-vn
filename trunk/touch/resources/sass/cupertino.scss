@@ -1,2 +1,5 @@
 @import 'sencha-touch/cupertino';
 @import 'sencha-touch/cupertino/all';
+
+@include font-face("NexaLight", inline-font-files("nexa/NexaFreeLightwebfont.woff", woff, "nexa/NexaFreeLightwebfont.ttf", truetype), "nexa/NexaFreeLightwebfont.eot");  
+$font-family: "NexaLight" !default;

@@ -672,7 +672,8 @@ Ext.ClassManager.addNameAlternateMappings({
   "OnePiece.view.AllPostView": [],
   "OnePiece.view.Gallery": [],
   "OnePiece.view.GalleryCarousel": [],
-  "OnePiece.view.Main": []
+  "OnePiece.view.Main": [],
+  "OnePiece.view.Menu": []
 });
 Ext.ClassManager.addNameAliasMappings({
   "Ext.AbstractComponent": [],
@@ -1404,6 +1405,9 @@ Ext.ClassManager.addNameAliasMappings({
   ],
   "OnePiece.view.Main": [
     "widget.main"
+  ],
+  "OnePiece.view.Menu": [
+    "widget.mainmenu"
   ]
 });
 

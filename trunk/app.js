@@ -20,7 +20,8 @@ Ext.application({
     views: [
         'AllPostView',
         'Gallery',
-        'GalleryCarousel'
+        'GalleryCarousel',
+        'Menu'
     ],
 
     models: [
@@ -53,8 +54,10 @@ Ext.application({
         // Destroy the #appLoadingIndicator element
         Ext.fly('appLoadingIndicator').destroy();
 
+        Ext.Viewport.innerElement.addCls('viewport-inner');
         // Initialize the main view
         Ext.Viewport.add(Ext.create('OnePiece.view.AllPostView'));
+        Ext.Viewport.add(Ext.create('OnePiece.view.Menu'));
     },
 
     onUpdated: function() {
