@@ -14,11 +14,8 @@
                 xtype: 'toolbar',
                 title: 'All Post',
                 cls: 'all-post-toolbar',
-                height: 90,
                 items: [
                     {
-                        height: 60,
-                        width: 90,
                         iconCls: 'menu-icon',
                         handler: function () {
                             Ext.Viewport.child('mainmenu').toggle();
@@ -33,6 +30,7 @@
                         xtype: 'list',
                         flex: 0.9,
                         pinHeaders: false,
+                        disableSelection: true,
                         cls: 'postlist',
                         store: {
                             fields: ['name'],
@@ -46,20 +44,22 @@
 
                         itemTpl: '<div class="box col2">' +
                             '<div class="box-footer">' +
+                            '<span class="profile-avatar">' +
                             '<img src="https://gp5.googleusercontent.com/-q6wSJriJDws/AAAAAAAAAAI/AAAAAAAAAAA/EshQZ2QhOQc/s48-c-k-no/photo.jpg" />' +
+                            '</span>' +
                             '<span class="box-postername">' +
                             'Kizaru' +
                             '</span>' +
-                            '<span class="box-createdtime">' +
-                            '<span class="icon-clock"></span>' +
+                            '<span class="box-createdtime box-action-count">' +
+                            '<span class="clock-full-icon"></span>' +
                             '<span class="text">1h</span>' +
                             '</span>' +
-                            '<span class="box-likecount">' +
-                            '<span class="icon-heart"></span>' +
+                            '<span class="box-likecount box-action-count">' +
+                            '<span class="like-full-icon"></span>' +
                             '<span class="text">15</span>' +
                             '</span>' +
-                            '<span class="box-commentcount">' +
-                            '<span class="icon-message2"></span>' +
+                            '<span class="box-commentcount box-action-count">' +
+                            '<span class="comment-full-icon"></span>' +
                             '<span class="text">1h</span>' +
                             '</span>' +
                             '</div>' +

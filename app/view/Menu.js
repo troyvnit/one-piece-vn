@@ -9,8 +9,8 @@ Ext.define('OnePiece.view.Menu', {
         left: 0,
         bottom: 0,
         zIndex: 0,
-		width: 515,
-        padding: '110 0 0 0',
+		width: 285,
+        padding: '100 0 0 0',
         open: false,
         scrollable: 'vertical',
         defaultType: 'button',
@@ -31,7 +31,7 @@ Ext.define('OnePiece.view.Menu', {
             {
                     xtype: 'list',
                     cls: 'mainmenu-list',
-                    itemHeight: 120,
+                    itemHeight: 60,
                     baseCls: 'menuList',
                     scrollable: false,
                     flex: 4,
@@ -39,21 +39,11 @@ Ext.define('OnePiece.view.Menu', {
                         fields: ['name', 'icon'],
                         data: [
                             { name: 'Edit profile', icon: '/resources/images/config.png' },
-                            { name: 'Everett', icon: '' },
-                            { name: 'University', icon: '' },
-                            { name: 'Forest', icon: '' },
-                            { name: 'Everett', icon: '' },
-                            { name: 'University', icon: '' },
-                            { name: 'Forest', icon: '' },
-                            { name: 'Everett', icon: '' },
-                            { name: 'University', icon: '' },
-                            { name: 'Forest', icon: '' },
-                            { name: 'Everett', icon: '' },
-                            { name: 'University', icon: '' },
-                            { name: 'Forest', icon: '' },
-                            { name: 'Everett', icon: '' },
-                            { name: 'University', icon: '' },
-                            { name: 'Forest', icon: '' }
+                            { name: 'Everett', icon: '/resources/images/config.png' },
+                            { name: 'University', icon: '/resources/images/config.png' },
+                            { name: 'Forest', icon: '/resources/images/config.png' },
+                            { name: 'Everett', icon: '/resources/images/config.png' },
+                            { name: 'University', icon: '/resources/images/config.png' }
                         ]
                     },
                     itemTpl: '<span class="mainmenu-icon"><img src="{icon}"/></span><span class="mainmenu-name">{name}</span>'
