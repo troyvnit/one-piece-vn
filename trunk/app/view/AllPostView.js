@@ -14,19 +14,18 @@
                 xtype: 'toolbar',
                 title: 'All Post',
                 cls: 'all-post-toolbar',
+                height: 90,
                 items: [
                     {
-                        iconCls: 'list',
+                        height: 60,
+                        width: 90,
+                        iconCls: 'menu-icon',
                         handler: function () {
                             Ext.Viewport.child('mainmenu').toggle();
                         }
                     },
                     {
                         xtype: 'spacer'
-                    },
-                    {
-                        text: 'Save',
-                        ui: 'confirm'
                     }
                 ]
             },

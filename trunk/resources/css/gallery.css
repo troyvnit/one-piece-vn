@@ -382,7 +382,7 @@ vertical-align: top;
 
 /**/
 * {
-    font-family: 'NexaLight';
+    font-family: 'Tahoma';
 }
 @font-face {
 	font-family: 'Minimal';
@@ -589,15 +589,31 @@ vertical-align: top;
     padding: 0 !important;
 }
 
+.postlist .x-list-item {
+    border: none;
+}
+
 .all-post-panel {
   background: url(../images/background.png);
 }
 
 .all-post-toolbar {
-    background-color: #4eb660;
+    background-color: #1e3d55;
+}
+
+.all-post-toolbar .x-title{
+    color: white;
+    font-weight: bold;
+    font-size: 30.6pt;
 }
 
 /*menu*/
+.menu-icon {
+    background: url(../images/menu-icon.png);
+    width: 56px;
+    height: 56px;
+}
+
 .viewport-inner {
   -webkit-transform: translate3d(0, 0, 0);
   -moz-transform: translate3d(0, 0, 0);
@@ -620,6 +636,75 @@ vertical-align: top;
   padding: 0.2em 1em;
   border-bottom: 1px solid #ffffff;
   background: none;
+}
+
+.mainmenu-list .x-list-item-tpl {
+    border-bottom: 1px solid #1f3e53;
+    height: 120px;
+    padding: 40px 50px;
+    color: #d8d8d8;
+    font-size: 25pt;
+}
+
+.mainmenu-list .x-item-selected{
+    background-color: #ff4b5a;
+}
+
+.mainmenu-icon {
+    width: 40px;
+    height: 40px;
+    float: left;
+}
+
+.mainmenu-name {
+    margin-left: 35px;
+    vertical-align: middle;
+    float: left;
+}
+
+.profile {
+    color: white;
+    margin-bottom: 30px;
+}
+
+.profile-avatar {
+    width: 165px;
+    height: 165px;
+    display: inline-block;
+    float: left;
+    background: url(../images/avatar-circle.png);
+    position: relative;
+    margin-left: 50px;
+    margin-right: 10px;
+}
+
+.profile-avatar img {
+    width: 150px;
+    height: 150px;
+    position: absolute;
+    top: 7.5px;
+    left: 7.5px;
+    z-index: 2;
+    border-radius: 50%;
+}
+
+.profile-welcome {
+    display: inline-block;
+    float: left;
+    padding: 30px 0;
+    height: 165px;
+}
+
+.profile-fullname {
+    font-size: 35pt;
+}
+
+.profile-fullname strong{
+    font-weight: bold;
+}
+
+.profile-message {
+    font-size: 25pt;
 }
 
 .x-button-mainmenu, .x-button-login {

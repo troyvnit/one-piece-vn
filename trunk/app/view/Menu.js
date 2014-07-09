@@ -2,14 +2,15 @@ Ext.define('OnePiece.view.Menu', {
     extend: 'Ext.Container',
     xtype: 'mainmenu',
     config: {
+        layout: 'vbox',
         cls: 'mainmenu',
         docked: 'left',
 		top: 0,
         left: 0,
         bottom: 0,
         zIndex: 0,
-		width: 266,
-        padding: '97 0 0 0',
+		width: 515,
+        padding: '110 0 0 0',
         open: false,
         scrollable: 'vertical',
         defaultType: 'button',
@@ -17,50 +18,46 @@ Ext.define('OnePiece.view.Menu', {
             textAlign: 'left'
         },
         items: [{
-            text: 'Schedule',
-            ui: 'mainmenu',
-            href: '#sessions',
-            iconCls: 'ico-schedule'
-        },{
-            text: 'Speakers',
-            ui: 'mainmenu',
-            href: '#speakers',
-            iconCls: 'ico-speakers'
-        },{
-            text: 'Sponsors',
-            ui: 'mainmenu',
-            href: '#sponsors',
-            iconCls: 'ico-sponsors'
-        },{
-            text: 'Maps',
-            ui: 'mainmenu',
-            iconCls: 'ico-maps',
-            href: '#maps'
-        },{
-            text: 'More Info',
-            ui: 'mainmenu',
-            iconCls: 'ico-info',
-            href: '#info'
-        },{
-            xtype: 'component',
-            cls: 'divider',
-            html: 'Social'
-        },{
-            text: '@SenchaCon',
-            ui: 'mainmenu',
-            href: '#feed',
-            iconCls: 'ico-feed'
-        },{
-            text: '#SenchaCon',
-            ui: 'mainmenu',
-            href: '#tweets',
-            iconCls: 'ico-twitter'
-        },{
-            text: 'Who\'s Here',
-            ui: 'mainmenu',
-            href: '#whoshere',
-            iconCls: 'ico-location'
-        }]
+            xtype: 'panel',
+            cls:'profile',
+                    data:{
+                        firstname: 'Troy',
+                        lastname: 'Lee',
+                        avatar: 'https://fbcdn-profile-a.akamaihd.net/hprofile-ak-xap1/t1.0-1/p160x160/1229921_661986813819335_105860452_n.jpg'
+                    },
+                    tpl: '<span class="profile-avatar"><img src="{avatar}"></span><span class="profile-welcome"><div class="profile-fullname">{firstname} <strong>{lastname}</strong></div><div class="profile-message">Welcome</div></span>',
+                flex: 1
+        },
+            {
+                    xtype: 'list',
+                    cls: 'mainmenu-list',
+                    itemHeight: 120,
+                    baseCls: 'menuList',
+                    scrollable: false,
+                    flex: 4,
+                    store: {
+                        fields: ['name', 'icon'],
+                        data: [
+                            { name: 'Edit profile', icon: '/resources/images/config.png' },
+                            { name: 'Everett', icon: '' },
+                            { name: 'University', icon: '' },
+                            { name: 'Forest', icon: '' },
+                            { name: 'Everett', icon: '' },
+                            { name: 'University', icon: '' },
+                            { name: 'Forest', icon: '' },
+                            { name: 'Everett', icon: '' },
+                            { name: 'University', icon: '' },
+                            { name: 'Forest', icon: '' },
+                            { name: 'Everett', icon: '' },
+                            { name: 'University', icon: '' },
+                            { name: 'Forest', icon: '' },
+                            { name: 'Everett', icon: '' },
+                            { name: 'University', icon: '' },
+                            { name: 'Forest', icon: '' }
+                        ]
+                    },
+                    itemTpl: '<span class="mainmenu-icon"><img src="{icon}"/></span><span class="mainmenu-name">{name}</span>'
+                }]
     },
     
     setParent: function(parent) {
