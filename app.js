@@ -50,7 +50,10 @@ Ext.application({
         '1496x2048': 'resources/startup/1496x2048.png'
     },
 
-    launch: function() {
+    launch: function () {
+        if (Ext.os.is.iOS && Ext.os.version.major >= 7) {
+            Ext.select(".x-toolbar").applyStyles("height: 90px; padding-top: 40px;");
+        }
         // Destroy the #appLoadingIndicator element
         Ext.fly('appLoadingIndicator').destroy();
 
@@ -58,6 +61,8 @@ Ext.application({
         // Initialize the main view
         Ext.Viewport.add(Ext.create('OnePiece.view.AllPostView'));
         Ext.Viewport.add(Ext.create('OnePiece.view.Menu'));
+        Ext.select(".x-toolbar").setHeight("130px");
+        Ext.select(".x-toolbar").applyStyles("padding-top: 40px;");
     },
 
     onUpdated: function() {
