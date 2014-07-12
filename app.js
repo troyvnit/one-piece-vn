@@ -25,11 +25,15 @@ Ext.application({
     ],
 
     models: [
-        'Post'
+        'PhotoPost'
     ],
 
     controllers: [
 		'PostController'
+    ],
+
+    stores: [
+        'PhotoPostStore'
     ],
 
     icon: {

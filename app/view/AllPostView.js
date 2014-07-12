@@ -4,7 +4,8 @@
     requires: [
         'Ext.TitleBar',
         'Ext.carousel.Carousel', 
-        'Ext.dataview.List'
+        'Ext.dataview.List',
+        'OnePiece.store.PhotoPostStore'
     ],
     config: {
         cls: 'all-post-panel',
@@ -32,15 +33,7 @@
                         pinHeaders: false,
                         disableSelection: true,
                         cls: 'postlist',
-                        store: {
-                            fields: ['name'],
-                            data: [
-                                { name: 'Cowper' },
-                                { name: 'Everett' },
-                                { name: 'University' },
-                                { name: 'Forest' }
-                            ]
-                        },
+                        store: 'PhotoPostStore',
 
                         itemTpl: '<div class="box col2">' +
                             '<div class="box-footer">' +
@@ -68,7 +61,7 @@
                             '</div>' +
                             '<div class="box-arrow">' +
                             '<div class="box-shortdesc">' +
-                            '<p>@post.PostShortDescription</p>' +
+                            '<p>{caption}</p>' +
                             '</div>' +
                             '</div>' +
                             '<div class="box-action">' +
