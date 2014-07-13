@@ -351,12 +351,10 @@ vertical-align: top;
 .icon-pencil:before {
 	content: "\e610";
 }
-.icon-message2 {
-    background: url(../images/comment-line-icon.png);
-    background-size: cover;
-    width: 17px;
-    height: 15px;
-    display: inline-block;
+.icon-message2:before {
+    font-family: "icomoon";
+    content: "\e049";
+    font-size: 16px;
 }
 .icon-message:before {
 	content: "\e612";
@@ -385,12 +383,10 @@ vertical-align: top;
 .icon-home:before {
 	content: "\e61b";
 }
-.icon-heart {
-    background: url(../images/like-line-icon.png);
-    background-size: cover;
-    width: 17px;
-    height: 15px;
-    display: inline-block;
+.icon-heart:before {
+    font-family: "icomoon";
+    content: "\e04a";
+    font-size: 16px;
 }
 
 .icon-heart .clicked {
@@ -428,12 +424,10 @@ vertical-align: top;
 .icon-cog:before {
 	content: "\e626";
 }
-.icon-cloud {
-    background: url(../images/share-line-icon.png);
-    background-size: cover;
-    width: 17px;
-    height: 17px;
-    display: inline-block;
+.icon-cloud:before {
+    font-family: "icomoon";
+    content: "\e039";
+    font-size: 16px;
 }
 .icon-clock:before {
 	content: "\e628";
@@ -460,32 +454,26 @@ vertical-align: top;
 	content: "\e62f";
 }
 
-.like-full-icon {
-    background: url(../images/like-full-icon.png);
-    width: 16px;
-    height: 14px;
-}
+    .like-full-icon:before {
+        font-family: "icomoon";
+        content: "\e04a";
+    }
 
-.comment-full-icon {
-    background: url(../images/comment-full-icon.png);
-    width: 16px;
-    height: 14px;
-}
+.comment-full-icon:before {
+        font-family: "icomoon";
+        content: "\e049";
+    }
 
-.clock-full-icon {
-    background: url(../images/clock-full-icon.png);
-    width: 14px;
-    height: 14px;
-}
+.clock-full-icon:before {
+        font-family: "icomoon";
+        content: "\e055";
+    }
 
 .box-action-count span{
     float: right;
+    margin-left: 3px;
 }
 
-.box-action-count span:first-child {
-    background-size: cover;
-    margin: 7px 3px;
-}
 
 .stylish {
     display: inline-block;
@@ -521,6 +509,7 @@ vertical-align: top;
     width: 50px;
     height: 50px;
     background: url(../images/avatar-circle-small.png);
+    background-size: cover; 
     position: absolute;
     top: 5px;
     left: 7px;
@@ -557,6 +546,24 @@ vertical-align: top;
     width: 28px;
     height: 28px;
 }
+
+.profile-icon:before {
+        font-family: "icomoon";
+        content: "\e040";
+    }
+.image-icon:before {
+        font-family: "icomoon";
+        content: "\e00f";
+    }
+.film-icon:before {
+        font-family: "icomoon";
+        content: "\e011";
+    }
+
+.switch-icon:before {
+        font-family: "icomoon";
+        content: "\e02b";
+    }
 
 .viewport-inner {
   -webkit-transform: translate3d(0, 0, 0);
@@ -618,6 +625,7 @@ vertical-align: top;
     display: inline-block;
     float: left;
     background: url(../images/avatar-circle.png);
+    background-size: cover; 
     position: relative;
     margin-left: 25px;
     margin-right: 5px;
@@ -678,4 +686,19 @@ vertical-align: top;
 
 .x-button-mainmenu.x-button-pressing, .x-button-mainmenu.x-button-pressing .x-button-label, .x-button-mainmenu.x-button-pressing .x-badge, .x-button-login.x-button-pressing, .x-button-login.x-button-pressing .x-button-label, .x-button-login.x-button-pressing .x-badge {
   color: #888;
+}
+
+.x-toolbar .x-button {
+    border: 1px solid white;
+    border-radius: 50%;
+    height: 28px;
+    width: 28px;
+    padding: 0;
+    font-size: 13px;
+    background: white;
+    margin: 0 10px;
+}
+
+.x-button-icon {
+    color: #273854;
 }
