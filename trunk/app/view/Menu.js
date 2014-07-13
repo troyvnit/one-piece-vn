@@ -38,15 +38,13 @@ Ext.define('OnePiece.view.Menu', {
                     store: {
                         fields: ['name', 'icon'],
                         data: [
-                            { name: 'Edit profile', icon: '/resources/images/config.png' },
-                            { name: 'Everett', icon: '/resources/images/config.png' },
-                            { name: 'University', icon: '/resources/images/config.png' },
-                            { name: 'Forest', icon: '/resources/images/config.png' },
-                            { name: 'Everett', icon: '/resources/images/config.png' },
-                            { name: 'University', icon: '/resources/images/config.png' }
+                            { name: 'Edit profile', icon: 'profile-icon' },
+                            { name: 'Meme', icon: 'image-icon' },
+                            { name: 'Movie', icon: 'film-icon' },
+                            { name: 'Log Out', icon: 'switch-icon' }
                         ]
                     },
-                    itemTpl: '<span class="mainmenu-icon"><img src="{icon}"/></span><span class="mainmenu-name">{name}</span>'
+                    itemTpl: '<span class="mainmenu-icon"><span class="{icon}"></span></span><span class="mainmenu-name">{name}</span>'
                 }]
     },
     

@@ -1,5 +1,10 @@
 @import 'sencha-touch/cupertino';
 @import 'sencha-touch/cupertino/all';
 
-@include font-face("NexaLight", inline-font-files("nexa/NexaFreeLightwebfont.woff", woff, "nexa/NexaFreeLightwebfont.ttf", truetype), "nexa/NexaFreeLightwebfont.eot");  
-$font-family: "NexaLight" !default;
+@include icon-font('icomoon', inline-font-files(
+  'icomoon/icomoon.woff', woff,
+  'icomoon/icomoon.ttf', truetype,
+  'icomoon/icomoon.svg', svg
+));
+ 
+@include icon("menu2"  , "\e6c0", "icomoon");

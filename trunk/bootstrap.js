@@ -668,7 +668,8 @@ Ext.ClassManager.addNameAlternateMappings({
     "Ext.viewport.WP"
   ],
   "OnePiece.controller.PostController": [],
-  "OnePiece.model.Post": [],
+  "OnePiece.model.PhotoPost": [],
+  "OnePiece.store.PhotoPostStore": [],
   "OnePiece.view.AllPostView": [],
   "OnePiece.view.Gallery": [],
   "OnePiece.view.GalleryCarousel": [],
@@ -1393,7 +1394,8 @@ Ext.ClassManager.addNameAliasMappings({
   "Ext.viewport.Viewport": [],
   "Ext.viewport.WindowsPhone": [],
   "OnePiece.controller.PostController": [],
-  "OnePiece.model.Post": [],
+  "OnePiece.model.PhotoPost": [],
+  "OnePiece.store.PhotoPostStore": [],
   "OnePiece.view.AllPostView": [
     "widget.allPostView"
   ],

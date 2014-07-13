@@ -17,7 +17,7 @@
                 cls: 'all-post-toolbar',
                 items: [
                     {
-                        iconCls: 'menu-icon',
+                        iconCls: 'menu2',
                         handler: function () {
                             Ext.Viewport.child('mainmenu').toggle();
                         }
@@ -38,10 +38,10 @@
                         itemTpl: '<div class="box col2">' +
                             '<div class="box-footer">' +
                             '<span class="profile-avatar">' +
-                            '<img src="https://gp5.googleusercontent.com/-q6wSJriJDws/AAAAAAAAAAI/AAAAAAAAAAA/EshQZ2QhOQc/s48-c-k-no/photo.jpg" />' +
+                            '<img src="http://api.tumblr.com/v2/blog/{blog_name}.tumblr.com/avatar/64?api_key=bG5akRvJLhTpHlXRp0tzLMsVBQc582JFk3SP6HbEJobnGysh8W" />' +
                             '</span>' +
                             '<span class="box-postername">' +
-                            'Kizaru' +
+                            '{blog_name}' +
                             '</span>' +
                             '<span class="box-createdtime box-action-count">' +
                             '<span class="clock-full-icon"></span>' +
@@ -57,11 +57,13 @@
                             '</span>' +
                             '</div>' +
                             '<div class="box-content">' +
-                            '<img src="http://img.hayhaytv.com/film/04102013/one-piece_64431380857712.jpg">' +
+                            '<tpl for="photos">' +
+                            '<img src="{original_size.url}">' +
+                            '</tpl>' +
                             '</div>' +
                             '<div class="box-arrow">' +
                             '<div class="box-shortdesc">' +
-                            '<p>{caption}</p>' +
+                            '{caption}' +
                             '</div>' +
                             '</div>' +
                             '<div class="box-action">' +
