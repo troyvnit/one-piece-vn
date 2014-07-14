@@ -1,4 +1,4 @@
-<!DOCTYPE HTML>
+﻿<!DOCTYPE HTML>
 <html manifest="" lang="en-US">
 <head>
     <meta charset="UTF-8">
@@ -51,8 +51,21 @@
     </style>
     <!-- The line below must be kept intact for Sencha Command to build your application -->
     <script id="microloader" type="text/javascript" src=".sencha/app/microloader/development.js"></script>
+    <script type="text/javascript" src="cordova.js"></script>
+    <script type="text/javascript">
+        function onLoad() {
+            document.addEventListener("deviceready", onDeviceReady, false);
+        }
+        function onDeviceReady() {
+
+            if (Ext.os.is.iOS && Ext.os.version.major >= 7) {
+                Ext.select(".x-toolbar").setHeight("62px");
+                Ext.select(".x-toolbar").applyStyles("padding-top: 15px;");
+            }
+        }
+    </script>
 </head>
-<body>
+<body onload='onLoad()'>
     <div id="appLoadingIndicator">
         <div></div>
         <div></div>
