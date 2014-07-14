@@ -55,10 +55,6 @@ Ext.application({
     },
 
     launch: function () {
-        if (Ext.os.is.iOS && Ext.os.version.major >= 7) {
-            Ext.select(".x-toolbar").setHeight("62px");
-            Ext.select(".x-toolbar").applyStyles("padding-top: 15px;");
-        }
         // Destroy the #appLoadingIndicator element
         Ext.fly('appLoadingIndicator').destroy();
 
