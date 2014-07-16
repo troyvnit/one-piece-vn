@@ -58,7 +58,11 @@
                             '</div>' +
                             '<div class="box-content">' +
                             '<tpl for="photos">' +
-                            '<img src="{original_size.url}">' +
+                            '<tpl for="alt_sizes">' +
+                            '<tpl if="[xindex] == \'2\'">' +
+                            '<img src="{url}">' +
+                            '</tpl>' +
+                            '</tpl>' +
                             '</tpl>' +
                             '</div>' +
                             '<div class="box-arrow">' +
