@@ -21,7 +21,8 @@ Ext.application({
         'AllPostView',
         'Gallery',
         'GalleryCarousel',
-        'Menu'
+        'Menu',
+        'InfiniteList'
     ],
 
     models: [
