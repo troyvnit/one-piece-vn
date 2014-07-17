@@ -61,7 +61,7 @@
                     '<tpl for="alt_sizes">' +
                     '<tpl if="[xindex] == \'1\'">' +
                     '<div class="infinite-item">' +
-                        '<div class="wrapper" style="position: relative; width:100%; padding-bottom: {[100*values.height/values.width]}%; background-color:#eee; border: 1px solid #aaa">' +
+                        '<div class="wrapper" style="position: relative; width:100%; padding-bottom: {[100*values.height/values.width]}%;">' +
                             '<div class="inner" style="position:absolute; top:0; bottom:0; left:0; right:0 ">' +
                                 '<img style="width: 100%; opacity:0; transition: opacity 3s" data-src="{url}" />' +
                             '</div>' +
