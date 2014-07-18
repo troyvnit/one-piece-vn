@@ -81,10 +81,14 @@ Ext.define('OnePiece.view.InfiniteList', {
         var imgs = listItemEl.query('img');
         for (var i in imgs) {
             var img = imgs[i];
-            if (img && !img.classList.contains('loaded')) {
-                img.src = img.getAttribute("data-src");
-                img.style.opacity = 1;
-                img.className += 'loaded';
+            var imgSrc = img.getAttribute("data-gifffer") || img.getAttribute("src");
+            if (imgSrc) {
+                var imgInfos = imgSrc.split('.');
+                if (img && !img.classList.contains('loaded') && imgInfos[imgInfos.length - 1] != 'gif') {
+                    img.src = imgSrc;
+                    img.style.opacity = 1;
+                    img.className += 'loaded';
+                }
             }
         }
     }
