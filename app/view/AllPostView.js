@@ -38,7 +38,7 @@
                 itemTpl: '<div class="box col2">' +
                     '<div class="box-footer">' +
                     '<span class="profile-avatar">' +
-                    '<img data-src="http://api.tumblr.com/v2/blog/{blog_name}.tumblr.com/avatar/64?api_key=bG5akRvJLhTpHlXRp0tzLMsVBQc582JFk3SP6HbEJobnGysh8W" />' +
+                    '<img data-gifffer="http://api.tumblr.com/v2/blog/{blog_name}.tumblr.com/avatar/64?api_key=bG5akRvJLhTpHlXRp0tzLMsVBQc582JFk3SP6HbEJobnGysh8W" />' +
                     '</span>' +
                     '<span class="box-postername">' +
                     '{blog_name}' +
@@ -63,7 +63,7 @@
                     '<div class="infinite-item">' +
                         '<div class="wrapper" style="position: relative; width:100%; padding-bottom: {[100*values.height/values.width]}%;">' +
                             '<div class="inner" style="position:absolute; top:0; bottom:0; left:0; right:0 ">' +
-                                '<img style="width: 100%; opacity:0; transition: opacity 3s" data-src="{url}" />' +
+                                '<img style="width: 100%; opacity:0; transition: opacity 3s" data-gifffer="{url}" />' +
                             '</div>' +
                         '</div>' +
                     '</div>'+
